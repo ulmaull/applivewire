@@ -22,6 +22,7 @@ Route::group(['middleware'=>'auth'],function(){
         Route::group(['prefix'=>'article'],function(){
             Route::get('/',ArticleIndex::class)->name('article');
             Route::get('create',ArticleCreate::class)->name('article.create');
+            Route::get('category',ArticleCreate::class)->name('article.create');
 
 
         });
