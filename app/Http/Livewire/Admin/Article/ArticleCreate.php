@@ -11,5 +11,8 @@ class ArticleCreate extends Component
         return view('admin.article.create')
             ->extends('admin.layouts.app')
             ->section('content');
+//        view('admin.article.create')
+//            ->extends('admin.layouts.app')
+//            ->section('content');
     }
 }

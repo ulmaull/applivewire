@@ -14,7 +14,7 @@ Route::get('auth', function () {
 });
 Route::get('auth/login',Authentication::class)->name('auth.showLoginForm');
 //Route::post('/',[AuthController::class,'login'])->name('login');
-Route::get('logout','AuthController@logout')->name('logout');
+//Route::get('logout',Authentication::class)->name('logout');
 //END AUTH LOGIN
 
 Route::group(['middleware'=>'auth'],function(){

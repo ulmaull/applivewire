@@ -1,5 +1,6 @@
 @extends('admin.layouts.skeleton')
 @section('app')
+
     <div class="wrapper">
         <!--
       ====================================
@@ -20,4 +21,5 @@
             @include('admin.layouts.components.footer')
         </div>
     </div>
+
 @endsection

@@ -1,4 +1,4 @@
-<div class="breadcrumb-wrapper">
+<div class="breadcrumb-wrapper" xmlns:wire="http://www.w3.org/1999/xhtml">
     <h1>Articles Website</h1>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb p-0">
@@ -12,15 +12,24 @@
         </ol>
     </nav>
 </div>
+@if($formOpen)
+    @include('admin.article.create')
+@else
+
+@endif
 
 <div class="row">
     <div class="col-12">
         <div class="card card-default">
             <div class="card-header card-header-border-bottom d-flex justify-content-between">
                 <h2>Daftar Artikel Anda</h2>
-                <a href="{{route('article.create')}}" target="_blank" class="btn btn-outline-primary btn-sm text-uppercase">
+                <button wire:click="like">
+                    aasas
+                </button>
+                <button wire:click="doOpen()" type="button"  class="btn btn-outline-primary btn-sm text-uppercase">
                     <i class="mdi mdi-blogger"></i> Tambah Artikel Baru
-                </a>
+                    {{--                        {{dd($formOpen)}}--}}
+                </button>
             </div>
 
             <div class="card-body">
@@ -64,10 +73,11 @@
                     </tr>
                     </tbody>
                 </table>
+            </div>
         </div>
     </div>
 </div>
-</div>
+
 @push('css')
     <!-- DATA TABLES -->
     <link href="{{ asset('admin/plugins/data-tables/datatables.bootstrap4.min.css') }}" rel="stylesheet">
