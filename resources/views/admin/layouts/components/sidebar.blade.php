@@ -46,11 +46,7 @@
                                     <span class="nav-text">Daftar Artikel</span>
                                 </a>
                             </li>
-                            <li class="@if(request()->is('superuser/article/create')) active @endif">
-                                <a class="sidenav-item-link" href="{{route('article.create')}}">
-                                    <span class="nav-text">Tambah Artikel</span>
-                                </a>
-                            </li>
+
                             <li class="@if(request()->is('superuser/article/category')) active @endif">
                                 <a class="sidenav-item-link" href="{{route('category')}}">
                                     <span class="nav-text">Kategori Artikel</span>

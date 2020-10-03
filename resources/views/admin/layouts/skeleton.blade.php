@@ -31,11 +31,14 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     @livewireStyles
+    @livewireScripts
+
     @stack('css')
 </head>
 <body class="header-fixed sidebar-fixed sidebar-dark header-light" id="body">
 @yield('app')
-@livewireScripts
+{{--<script src="{{ asset('vendor/livewire/livewire.js') }}" defer></script>--}}
+
 <script src="{{ asset('admin/plugins/jquery/jquery.min.js') }}"></script>
 <script src="{{ asset('admin/plugins/slimscrollbar/jquery.slimscroll.min.js') }}"></script>
 <script src="{{ asset('admin/plugins/jekyll-search.min.js') }}"></script>
@@ -46,7 +49,6 @@
 <script src="{{ asset('admin/plugins/daterangepicker/daterangepicker.js') }}"></script>
 <script src="{{ asset('admin/plugins/toastr/toastr.min.js') }}"></script>
 <script src="{{ asset('admin/js/sleek.bundle.js') }}"></script>
-{{--<script src="{{ asset('vendor/livewire/livewire.js') }}" defer></script>--}}
 @stack('js')
 </body>
 

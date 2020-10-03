@@ -4,7 +4,6 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\Authentication;
 use App\Http\Livewire\Admin\Dashboard;
 use App\Http\Livewire\Admin\Article\ArticleIndex;
-use App\Http\Livewire\Admin\Article\ArticleCreate;
 use App\Http\Livewire\Admin\Article\CategoryIndex;
 use App\Http\Livewire\Admin\Article\CategoryCreate;
 // START AUTH LOGIN
@@ -23,7 +22,6 @@ Route::group(['middleware'=>'auth'],function(){
 //        Route::view('website/about','admin.setting.website.skeleton');
         Route::group(['prefix'=>'article'],function(){
             Route::get('/',ArticleIndex::class)->name('article');
-            Route::get('create',ArticleCreate::class)->name('article.create');
             Route::get('category',CategoryIndex::class)->name('category');
             Route::get('category/create',CategoryCreate::class)->name('category.create');
 

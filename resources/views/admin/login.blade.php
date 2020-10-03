@@ -20,6 +20,11 @@
                     <div class="card-body p-5">
                         <h4 class="text-dark mb-5">Sign In</h4>
                         <form wire:submit.prevent="login()">
+                            @if (session()->has('message'))
+                                <div class="alert alert-danger">
+                                    {{ session('message') }}
+                                </div>
+                            @endif
                             <div class="row">
                                 <div class="form-group col-md-12 mb-4">
                                     <input wire:model="username" type="text" class="form-control input-lg" aria-describedby="Username" placeholder="Username Only">

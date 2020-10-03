@@ -17,17 +17,17 @@
     <div class="col-lg-12">
         <div class="card card-default">
             <div class="card-header justify-content-between align-items-center card-header-border-bottom">
-                <h2>Latest Notifications</h2>
+                <h2>Tambah Artikel</h2>
                 <div>
-                    <button class="text-black-50 mr-2 font-size-20"><i class="mdi mdi-cached"></i></button>
-                    <div class="dropdown d-inline-block widget-dropdown">
-                        <a class="dropdown-toggle icon-burger-mini" href="#" role="button" id="dropdown-notification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static"></a>
-                        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-notification">
-                            <li class="dropdown-item"><a href="#">Action</a></li>
-                            <li class="dropdown-item"><a href="#">Another action</a></li>
-                            <li class="dropdown-item"><a href="#">Something else here</a></li>
-                        </ul>
-                    </div>
+                    <button wire:click="doClose()" class="text-black-50 mr-2 font-size-20"><i class="mdi mdi-exit-to-app"></i></button>
+{{--                    <div class="dropdown d-inline-block widget-dropdown">--}}
+{{--                        <a class="dropdown-toggle icon-burger-mini" href="#" role="button" id="dropdown-notification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static"></a>--}}
+{{--                        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-notification">--}}
+{{--                            <li class="dropdown-item"><a href="#">Close</a></li>--}}
+{{--                            <li class="dropdown-item"><a href="#">Another action</a></li>--}}
+{{--                            <li class="dropdown-item"><a href="#">Something else here</a></li>--}}
+{{--                        </ul>--}}
+{{--                    </div>--}}
                 </div>
 
             </div>

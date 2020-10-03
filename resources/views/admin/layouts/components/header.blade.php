@@ -64,7 +64,7 @@
                     <ul class="dropdown-menu dropdown-menu-right">
                         <!-- User image -->
                         <li class="right-sidebar-in">
-                            <a href="javascript:0"> <i class="mdi mdi-settings"></i> Setting </a>
+                            <a type="button"> <i class="mdi mdi-settings"></i> Setting </a>
                         </li>
                         <li class="dropdown-footer">
                             <a type="button" wire:click="logout()"> <i class="mdi mdi-logout"></i> Log Out </a>

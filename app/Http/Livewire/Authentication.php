@@ -19,13 +19,18 @@ class Authentication extends Component
 
     public function login()
     {
-        dd($this->username);
+        $this->validate([
+           'username'=>'required',
+           'password'=>'required'
+        ]);
+//        dd($this->username);
         if (Auth::attempt(['username' => $this->username,'password' => $this->password])){
 //            notify("Welcome Admin","Success Login","info","topRight");
+//            session()->flash('message', 'Login Failed, Username or Password Invalid');
             return redirect()->route('dashboard');
         }
         else{
-            dd('sini');
+            session()->flash('message', 'Login Failed, Username or Password Invalid');
 //            notify("Invalid Username/Email Or Password","Failed Login","warning","topRight");
             return redirect()->back();
         }

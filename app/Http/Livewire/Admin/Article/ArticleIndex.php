@@ -6,8 +6,24 @@ use Livewire\Component;
 
 class ArticleIndex extends Component
 {
-    protected $listeners = ['doOpenForm'];
+    protected $listeners = ['doOpen','doClose'];
     public $formOpen = false;
+
+    public function mount()
+    {
+        $this->formOpen = false;
+    }
+
+    public function doClose()
+    {
+        $this->formOpen = false;
+    }
+
+    public function doOpen()
+    {
+        $this->formOpen = true;
+
+    }
 
     public function render()
     {
@@ -16,9 +32,5 @@ class ArticleIndex extends Component
             ->section('content');
     }
 
-    public function doOpen()
-    {
-        $this->formOpen = true;
-        dd($this->formOpen);
-    }
+
 }
