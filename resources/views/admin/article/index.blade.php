@@ -81,10 +81,13 @@
     @push('css')
         <!-- DATA TABLES -->
         <link href="{{ asset('admin/plugins/data-tables/datatables.bootstrap4.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('admin/plugins/select2/css/select2.min.css') }}" rel="stylesheet" />
     @endpush
     @push('js')
         <script src="{{ asset('admin/plugins/data-tables/jquery.datatables.min.js') }}"></script>
         <script src="{{ asset('admin/plugins/data-tables/datatables.bootstrap4.min.js') }}"></script>
+        <script src="{{asset('admin/plugins/select2/js/select2.min.js')}}"></script>
+        <script src="{{asset('admin/plugins/jquery-mask-input/jquery.mask.min.js')}}"></script>
         <script type="text/javascript">
             jQuery(document).ready(function() {
                 jQuery('#hoverable-data-table').DataTable({
@@ -93,6 +96,12 @@
                     "dom": '<"row justify-content-between top-information"lf>rt<"row justify-content-between bottom-information"ip><"clear">'
                 });
             });
+        </script>
+        <script>
+            var multipleSelect = $(".select_tag");
+            if(multipleSelect.length != 0){
+                multipleSelect.select2();
+            }
         </script>
     @endpush
 

@@ -53,7 +53,7 @@
                     </div>
                     <div class="form-group">
                         <label for="tag_artikel">Tag</label>
-                        <select class="js-example-basic-multiple form-control" name="states[]" multiple="multiple">
+                        <select class="select_tag form-control" name="states[]" multiple="multiple">
                             <option value="AL">Alabana</option>
                             <option value="NY">New York</option>
                             <option value="VR">Virginia</option>
@@ -71,10 +71,24 @@
             </div>
         </div>
     </div>
+    <div class="col-lg-6">
+        <div class="card card-default">
+            <div class="card-header card-header-border-bottom">
+                <h2>Multiple Select </h2>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <select class="js-example-basic-multiple form-control" name="states[]" multiple="multiple">
+                        <option value="AL">Alabana</option>
+                        <option value="NY">New York</option>
+                        <option value="VR">Virginia</option>
+                        <option value="WA">Washington</option>
+                        <option value="CA">California</option>
+                        <option value="WY">Wyoming</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-@push('css')
-    <link href="{{ asset('admin/plugins/select2/css/select2.min.css') }}" rel="stylesheet" />
-@endpush
-@push('js')
-    <script src="{{asset('admin/plugins/select2/js/select2.min.js')}}"></script>
-@endpush
+

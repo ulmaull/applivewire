@@ -12,17 +12,17 @@
     <link href="https://cdn.materialdesignicons.com/4.4.95/css/materialdesignicons.min.css" rel="stylesheet" />
     <!-- PLUGINS CSS STYLE -->
     <link href="{{ asset('admin/plugins/nprogress/nprogress.css') }}" rel="stylesheet" />
-
     <!-- No Extra plugin used -->
     <link href="{{ asset('admin/plugins/jvectormap/jquery-jvectormap-2.0.3.css') }}" rel="stylesheet" />
 {{--    <link href="{{ asset('admin/plugins/daterangepicker/daterangepicker.css') }}" rel="stylesheet" />--}}
     <link href="{{ asset('admin/plugins/toastr/toastr.min.css') }}" rel="stylesheet" />
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet" />
     <!-- SLEEK CSS -->
     <link id="sleek-css" rel="stylesheet" href="{{ asset('admin/css/sleek.css') }}" />
     <!-- FAVICON -->
     <link href="{{ asset('admin/img/favicon.png') }}" rel="shortcut icon" />
     <script src="{{ asset('admin/plugins/nprogress/nprogress.js') }}"></script>
-    <link href="https://unpkg.com/sleek-dashboard/dist/assets/css/sleek.min.css">
+{{--    <link href="https://unpkg.com/sleek-dashboard/dist/assets/css/sleek.min.css">--}}
     <!--
       HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
     -->
@@ -44,13 +44,14 @@
 <script src="{{ asset('admin/plugins/slimscrollbar/jquery.slimscroll.min.js') }}"></script>
 <script src="{{ asset('admin/plugins/jekyll-search.min.js') }}"></script>
 {{--<script src="{{ asset('admin/plugins/charts/Chart.min.js') }}"></script>--}}
-<script src="{{ asset('admin/plugins/jvectormap/jquery-jvectormap-2.0.3.min.js') }}"></script>
-<script src="{{ asset('admin/plugins/jvectormap/jquery-jvectormap-world-mill.js') }}"></script>
+{{--<script src="{{ asset('admin/plugins/jvectormap/jquery-jvectormap-2.0.3.min.js') }}"></script>--}}
+{{--<script src="{{ asset('admin/plugins/jvectormap/jquery-jvectormap-world-mill.js') }}"></script>--}}
 <script src="{{ asset('admin/plugins/daterangepicker/moment.min.js') }}"></script>
-<script src="{{ asset('admin/plugins/daterangepicker/daterangepicker.js') }}"></script>
+{{--<script src="{{ asset('admin/plugins/daterangepicker/daterangepicker.js') }}"></script>--}}
 <script src="{{ asset('admin/plugins/toastr/toastr.min.js') }}"></script>
 
 <script src="{{ asset('admin/js/sleek.bundle.js') }}"></script>
+<script src="{{ asset('js/app.js') }}"></script>
 @stack('js')
 </body>
 
