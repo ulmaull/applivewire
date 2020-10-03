@@ -32,83 +32,59 @@
 
             </div>
             <div class="card-body slim-scroll">
-                <div class="media py-3 align-items-center justify-content-between">
-                    <div class="d-flex rounded-circle align-items-center justify-content-center mr-3 media-icon iconbox-45 bg-primary text-white">
-                        <i class="mdi mdi-cart-outline font-size-20"></i>
+                <form>
+                    <div class="form-group">
+                        <label  for="judul_id">Judul Id</label>
+                        <input id="judul_id" type="text" class="form-control" placeholder="Judul Artikel">
                     </div>
-                    <div class="media-body pr-3 ">
-                        <a class="mt-0 mb-1 font-size-15 text-dark" href="#">New Order</a>
-                        <p>Selena has placed an new order</p>
+                    <div class="form-group">
+                        <label  for="judul_id">Judul En</label>
+                        <input id="judul_id" type="text" class="form-control" placeholder="Judul Artikel">
                     </div>
-                    <span class=" font-size-12 d-inline-block"><i class="mdi mdi-clock-outline"></i> 10 AM</span>
-                </div>
 
-                <div class="media py-3 align-items-center justify-content-between">
-                    <div class="d-flex rounded-circle align-items-center justify-content-center mr-3 media-icon iconbox-45 bg-success text-white">
-                        <i class="mdi mdi-email-outline font-size-20"></i>
+                    <div class="form-group row">
+                        <div class="col-12 col-md-3 text-right">
+                            <label for="">Password</label>
+                        </div>
+                        <div class="col-12 col-md-9">
+                            <input type="text" class="form-control" placeholder="Password">
+                        </div>
                     </div>
-                    <div class="media-body pr-3">
-                        <a class="mt-0 mb-1 font-size-15 text-dark" href="#">New Enquiry</a>
-                        <p>Phileine has placed an new order</p>
-                    </div>
-                    <span class=" font-size-12 d-inline-block"><i class="mdi mdi-clock-outline"></i> 9 AM</span>
-                </div>
+                    <div class="form-group row">
+                        <div class="col-12 col-md-3 text-right">
+                            <label for="Radios">Radios</label>
+                        </div>
+                        <div class="col-12 col-md-9">
+                            <label class="control control-radio">Option one is this and that—be sure to include why it's great
+                                <input type="radio" name="radio1" checked="checked" />
+                                <div class="control-indicator"></div>
+                            </label>
+                            <label class="control control-radio">Option two can be something else and selecting it will deselect
+                                <input type="radio" name="radio1" />
+                                <div class="control-indicator"></div>
+                            </label>
 
-
-                <div class="media py-3 align-items-center justify-content-between">
-                    <div class="d-flex rounded-circle align-items-center justify-content-center mr-3 media-icon iconbox-45 bg-warning text-white">
-                        <i class="mdi mdi-stack-exchange font-size-20"></i>
+                            <label class="control control-radio">Option three is disabled
+                                <input type="radio" name="radio1" disabled="disabled" />
+                                <div class="control-indicator"></div>
+                            </label>
+                        </div>
                     </div>
-                    <div class="media-body pr-3">
-                        <a class="mt-0 mb-1 font-size-15 text-dark" href="#">Support Ticket</a>
-                        <p>Emma has placed an new order</p>
+                    <div class="form-group row">
+                        <div class="col-12 col-md-3 text-right">
+                            <label for="checkbox">Checkbox</label>
+                        </div>
+                        <div class="col-12 col-md-9">
+                            <label class="control control-checkbox">Check me out
+                                <input type="checkbox" name="checkbox1" />
+                                <div class="control-indicator"></div>
+                            </label>
+                        </div>
                     </div>
-                    <span class=" font-size-12 d-inline-block"><i class="mdi mdi-clock-outline"></i> 10 AM</span>
-                </div>
-
-                <div class="media py-3 align-items-center justify-content-between">
-                    <div class="d-flex rounded-circle align-items-center justify-content-center mr-3 media-icon iconbox-45 bg-primary text-white">
-                        <i class="mdi mdi-cart-outline font-size-20"></i>
+                    <div class="form-footer pt-5 border-top">
+                        <button type="submit" class="btn btn-primary btn-default">Sign in</button>
                     </div>
-                    <div class="media-body pr-3">
-                        <a class="mt-0 mb-1 font-size-15 text-dark" href="#">New order</a>
-                        <p>Ryan has placed an new order</p>
-                    </div>
-                    <span class=" font-size-12 d-inline-block"><i class="mdi mdi-clock-outline"></i> 10 AM</span>
-                </div>
-
-                <div class="media py-3 align-items-center justify-content-between">
-                    <div class="d-flex rounded-circle align-items-center justify-content-center mr-3 media-icon iconbox-45 bg-info text-white">
-                        <i class="mdi mdi-calendar-blank font-size-20"></i>
-                    </div>
-                    <div class="media-body pr-3">
-                        <a class="mt-0 mb-1 font-size-15 text-dark" href="">Comapny Meetup</a>
-                        <p>Phileine has placed an new order</p>
-                    </div>
-                    <span class=" font-size-12 d-inline-block"><i class="mdi mdi-clock-outline"></i> 10 AM</span>
-                </div>
-
-                <div class="media py-3 align-items-center justify-content-between">
-                    <div class="d-flex rounded-circle align-items-center justify-content-center mr-3 media-icon iconbox-45 bg-warning text-white">
-                        <i class="mdi mdi-stack-exchange font-size-20"></i>
-                    </div>
-                    <div class="media-body pr-3">
-                        <a class="mt-0 mb-1 font-size-15 text-dark" href="#">Support Ticket</a>
-                        <p>Emma has placed an new order</p>
-                    </div>
-                    <span class=" font-size-12 d-inline-block"><i class="mdi mdi-clock-outline"></i> 10 AM</span>
-                </div>
-
-                <div class="media py-3 align-items-center justify-content-between">
-                    <div class="d-flex rounded-circle align-items-center justify-content-center mr-3 media-icon iconbox-45 bg-success text-white">
-                        <i class="mdi mdi-email-outline font-size-20"></i>
-                    </div>
-                    <div class="media-body pr-3">
-                        <a class="mt-0 mb-1 font-size-15 text-dark" href="#">New Enquiry</a>
-                        <p>Phileine has placed an new order</p>
-                    </div>
-                    <span class=" font-size-12 d-inline-block"><i class="mdi mdi-clock-outline"></i> 9 AM</span>
-                </div>
+                </form>
 
             </div>
             <div class="mt-3"></div>
