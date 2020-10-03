@@ -12,6 +12,7 @@
     <link href="https://cdn.materialdesignicons.com/4.4.95/css/materialdesignicons.min.css" rel="stylesheet" />
     <!-- PLUGINS CSS STYLE -->
     <link href="{{ asset('admin/plugins/nprogress/nprogress.css') }}" rel="stylesheet" />
+
     <!-- No Extra plugin used -->
     <link href="{{ asset('admin/plugins/jvectormap/jquery-jvectormap-2.0.3.css') }}" rel="stylesheet" />
 {{--    <link href="{{ asset('admin/plugins/daterangepicker/daterangepicker.css') }}" rel="stylesheet" />--}}
@@ -48,6 +49,7 @@
 <script src="{{ asset('admin/plugins/daterangepicker/moment.min.js') }}"></script>
 <script src="{{ asset('admin/plugins/daterangepicker/daterangepicker.js') }}"></script>
 <script src="{{ asset('admin/plugins/toastr/toastr.min.js') }}"></script>
+
 <script src="{{ asset('admin/js/sleek.bundle.js') }}"></script>
 @stack('js')
 </body>

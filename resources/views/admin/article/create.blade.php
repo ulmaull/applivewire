@@ -34,60 +34,47 @@
             <div class="card-body slim-scroll">
                 <form>
                     <div class="form-group">
-                        <label  for="judul_id">Judul Id</label>
+                        <label  for="judul_id">Judul Id</label><span class="text-danger"><b> *</b></span>
                         <input id="judul_id" type="text" class="form-control" placeholder="Judul Artikel">
                     </div>
                     <div class="form-group">
-                        <label  for="judul_id">Judul En</label>
-                        <input id="judul_id" type="text" class="form-control" placeholder="Judul Artikel">
+                        <label  for="judul_en">Judul En</label>
+                        <input id="judul_en" type="text" class="form-control" placeholder="Judul Artikel">
+                    </div>
+                    <div class="form-group">
+                        <label for="kategori_artikel">Kategori Artikel</label>
+                        <select class="form-control" id="kategori_artikel">
+                            <option>reno</option>
+                            <option>rido</option>
+                            <option>andi</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="tag_artikel">Tag</label>
+                        <select class="js-example-basic-multiple form-control" name="states[]" multiple="multiple">
+                            <option value="AL">Alabana</option>
+                            <option value="NY">New York</option>
+                            <option value="VR">Virginia</option>
+                            <option value="WA">Washington</option>
+                            <option value="CA">California</option>
+                            <option value="WY">Wyoming</option>
+                        </select>
                     </div>
 
-                    <div class="form-group row">
-                        <div class="col-12 col-md-3 text-right">
-                            <label for="">Password</label>
-                        </div>
-                        <div class="col-12 col-md-9">
-                            <input type="text" class="form-control" placeholder="Password">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-12 col-md-3 text-right">
-                            <label for="Radios">Radios</label>
-                        </div>
-                        <div class="col-12 col-md-9">
-                            <label class="control control-radio">Option one is this and that—be sure to include why it's great
-                                <input type="radio" name="radio1" checked="checked" />
-                                <div class="control-indicator"></div>
-                            </label>
-                            <label class="control control-radio">Option two can be something else and selecting it will deselect
-                                <input type="radio" name="radio1" />
-                                <div class="control-indicator"></div>
-                            </label>
-
-                            <label class="control control-radio">Option three is disabled
-                                <input type="radio" name="radio1" disabled="disabled" />
-                                <div class="control-indicator"></div>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-12 col-md-3 text-right">
-                            <label for="checkbox">Checkbox</label>
-                        </div>
-                        <div class="col-12 col-md-9">
-                            <label class="control control-checkbox">Check me out
-                                <input type="checkbox" name="checkbox1" />
-                                <div class="control-indicator"></div>
-                            </label>
-                        </div>
-                    </div>
                     <div class="form-footer pt-5 border-top">
-                        <button type="submit" class="btn btn-primary btn-default">Sign in</button>
+                        <button type="submit" class="btn btn-primary btn-default">Tambah Artikel</button>
                     </div>
                 </form>
 
             </div>
-            <div class="mt-3"></div>
         </div>
     </div>
 </div>
+@push('css')
+    <link href="{{ asset('admin/plugins/select2/css/select2.min.css') }}" rel="stylesheet" />
+@endpush
+@push('js')
+    <script src="{{asset('admin/plugins/select2/js/select2.min.js')}}"></script>
+@endpush
